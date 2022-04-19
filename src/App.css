@@ -1,21 +1,25 @@
 .App {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    overflow-y: hidden;
-    position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative;
 }
 
 .content {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    overflow-y: hidden;
+  height: 95%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  overflow-y: hidden;
+  border-radius: 5px;
 }
 
 .chat-area {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    overflow-y: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  overflow-y: hidden;
+  background-color: #f1f2f6;
 }
-

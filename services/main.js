@@ -7,13 +7,15 @@ const io = new Server(server);
 
 io.on('connection', (socket) => {
   console.log('a user connected');
+  
   socket.on('disconnect', () => {
     console.log('user disconnected');
   });
 
-  socket.on('newMessage', (msg) => {
-    console.log("message");
-    io.emit('newMessageIO', msg);
+  socket.on('newMessage', (msg, userId) => {
+    userId = socket.id
+    console.log("message from " + socket.id);
+    io.emit('newMessageIO', msg, userId);
   });
 });
 

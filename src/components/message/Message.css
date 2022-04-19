@@ -1,0 +1,11 @@
+.message {
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: var(--main-shadow);
+}
+
+.message p {
+    margin: 0;
+    padding: 10px;
+}

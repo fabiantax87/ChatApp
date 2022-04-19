@@ -1,3 +1,8 @@
 .messages-container {
     overflow-y: scroll;
 }
+
+.message-list {
+    margin: 0;
+    padding: 10px;
+}
