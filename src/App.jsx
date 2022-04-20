@@ -1,11 +1,12 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import socketIOClient from "socket.io-client";
-import Home from "./pages/Home";
-import Layout from "./pages/Layout";
+import { io } from "socket.io-client";
+import Home from "./pages/Home/Home";
+import CreateAccount from "./pages/CreateAccount/CreateAccount";
+import Layout from "./pages//Layout/Layout";
 
-const socket = socketIOClient("http://localhost:8080");
+const socket = io("http://localhost:8080");
 
 function App() {
   const [allMessages, setAllMessages] = useState([]);
@@ -34,6 +35,7 @@ function App() {
               <Home allMessages={allMessages} sendMessage={sendMessage} />
             }
           />
+          <Route path="create-account" element={<CreateAccount />} />
         </Route>
       </Routes>
     </div>

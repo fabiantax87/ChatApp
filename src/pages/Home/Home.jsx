@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "../components/form/Form";
-import Messages from "../components/messages/Messages";
-import ContactList from "../components/contact-list/ContactList";
+import Form from "../../components/form/Form";
+import Messages from "../../components/messages/Messages";
+import ContactList from "../../components/contact-list/ContactList";
 
 const Home = ({ allMessages, sendMessage }) => {
   return (

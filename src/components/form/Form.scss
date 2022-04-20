@@ -1,0 +1,12 @@
+.chat-form {
+  padding: 20px;
+  background-color: #f1f2f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input,
+  form {
+    width: 80%;
+  }
+}

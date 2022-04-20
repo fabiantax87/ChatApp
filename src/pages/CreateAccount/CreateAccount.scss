@@ -1,0 +1,25 @@
+.create-account {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
